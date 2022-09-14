@@ -9,6 +9,10 @@ import net.runelite.api.GameState;
 import net.runelite.api.events.GameStateChanged;
 import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.Subscribe;
+import net.runelite.client.events.ExternalPluginsChanged;
+import net.runelite.client.externalplugins.ExternalPluginClient;
+import net.runelite.client.externalplugins.ExternalPluginManager;
+import net.runelite.client.externalplugins.ExternalPluginManifest;
 import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
 
@@ -24,16 +28,18 @@ public class ExamplePlugin extends Plugin
 	@Inject
 	private ExampleConfig config;
 
+
 	@Override
 	protected void startUp() throws Exception
 	{
-		log.info("Example started katita!");
+		log.info("Example started Chupatula!");
+
 	}
 
 	@Override
 	protected void shutDown() throws Exception
 	{
-		log.info("Example stopped!");
+		log.info("Example stopped GATARINA!");
 	}
 
 	@Subscribe
